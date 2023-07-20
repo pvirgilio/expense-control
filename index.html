@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Controle de finanças</title>
+  </head>
+  <body class="">
+    <header class="flex justify-between p-[1rem]">
+      <!-- Logo -->
+      <div class="">
+        <h1>CTRLFinance</h1>
+      </div>
+
+      <!-- Barra de pesquisa -->
+      <div class="w-[40%] relative">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+          />
+        </svg>
+
+        <input
+          class="border border-black px-5 py-2 w-full rounded-full"
+          type=""
+          name=""
+          id=""
+          placeholder="Search Here..."
+        />
+      </div>
+
+      <!-- User and notifications -->
+      <div class="flex items-center gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 cursor-pointer"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5"
+          />
+        </svg>
+        <div
+          class="flex items-center gap-2 border border-black rounded-full p-1 cursor-pointer"
+        >
+          <img
+            class="w-[30px] rounded-full"
+            src="./img/pedrovirgilio.png"
+            alt=""
+          />
+          <h3>Pedro Virgilio</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="flex">
+      <nav
+        class="bg-gray-100 h-[650px] w-[300px] px-10 py-5 flex flex-col rounded-e-3xl"
+      >
+        <ul class="text-gray-500 flex flex-col gap-5">
+          <div
+            class="flex items-center gap-2 rounded-full cursor-pointer text-black font-semibold"
+          >
+            <img
+              class="w-[30px] rounded-full"
+              src="./img/pedrovirgilio.png"
+              alt=""
+            />
+            <span class="whitespace-nowrap">Pedro Virgilio</span>
+          </div>
+          <li class="flex gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"
+              />
+            </svg>
+            <a href="">Insights</a>
+          </li>
+          <li class="flex gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+              />
+            </svg>
+            <a id="btnGanhos" href="">Ganhos</a>
+          </li>
+          <li id="btnGastos" class="flex gap-2 cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <a href="">Gastos</a>
+          </li>
+          <li class="flex gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
+              />
+            </svg>
+            <a href="">Sobre</a>
+          </li>
+        </ul>
+        <div class="text-gray-500 gap-2 flex h-full mt-[5rem] cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+
+          <a href="">Settings</a>
+        </div>
+      </nav>
+
+      <section class="mx-10 w-full scrollable-sections">
+        <div
+          id="saldo "
+          class="bg-gray-100 flex flex-col gap-5 p-5 h-[200px] w-full rounded-3xl"
+        >
+          <h2 class="text-[1.5rem] font-semibold">Saldo</h2>
+          <div class="flex items-end justify-between">
+            <div class="flex items-center gap-2">
+              <span class="">R$ </span>
+              <span id="saldoAtual" class="text-[1.5rem]"></span>
+            </div>
+          </div>
+          <div class="bg-gray-300 h-2 mt-3 rounded-full">
+            <div class="w-[30%] h-2 rounded-full bg-green-600"></div>
+          </div>
+        </div>
+
+        <!-- Ganhos e gastos -->
+        <div class="flex gap-5">
+          <div
+            id="ganhos"
+            class="bg-gray-100 mt-10 p-10 w-1/2 h-[250px] rounded-3xl"
+          >
+            <div class="flex items-center gap-2">
+              <h2 class="font-semibold text-[1.5rem] text-green-700">Ganhos</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-green-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                />
+              </svg>
+            </div>
+
+            <div class="mt-5">
+              <span class="text-[1.5rem]">Total: R$ 100,00</span>
+            </div>
+
+            <div
+              id="addGanhos"
+              class="flex mx-auto mt-10 border border-black w-fit rounded-full p-2 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
+              <span>Adicionar novo ganho</span>
+            </div>
+          </div>
+
+          <div
+            id="gastos"
+            class="bg-gray-100 mt-10 p-10 w-1/2 h-[250px] rounded-3xl"
+          >
+            <div class="flex items-center gap-2">
+              <h2 class="font-semibold text-[1.5rem] text-red-700">Gastos</h2>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 text-red-700"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+
+            <div class="mt-5 flex gap-2 items-center">
+              <span class="text-[1.5rem]">Total:</span>
+              <span id="totalGasto"></span>
+            </div>
+
+            <div
+              id="btnGasto"
+              class="flex mx-auto mt-10 border border-black w-fit rounded-full p-2 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+
+              <a>Adicionar novo gasto</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="cardGanhos"></div>
+
+        <div id="cardGastos"></div>
+
+        <!-- Fim ganhos e gastos -->
+
+        <!-- Ganhos e Gastos adicionados -->
+        <div class="flex">
+          <!-- container ganhos e gastos -->
+          <div
+            id="ganhos-gastos"
+            class="mt-5 w-[60%] max-h-[300px] overflow-y-auto"
+          ></div>
+          <!-- Fim do container de Gastos e Ganhos -->
+
+          <!-- Barra de pesquisa Gastos e Ganhos -->
+          <div class="mt-10 border-l border-gray-400 ml-5 pl-3 relative">
+            <input
+              class="border border-gray-500 rounded-full pl-3 py-1"
+              type="search"
+              name=""
+              id=""
+              placeholder="Pesquise aqui..."
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 absolute right-0 top-4 bottom-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <!-- fim da barra de pesquisa -->
+        </div>
+        <!-- fim ganhos e gastos adicionados -->
+      </section>
+
+      <!-- <section
+        id="gastos"
+        class="bg-gray-50 ml-[2rem] rounded-3xl w-[400px] h-[200px]"
+      >
+        <h2 class="text-[2rem] text-center font-semibold text-red-600">
+          Gastos
+        </h2>
+
+        <div class="px-5 flex flex-col gap-10 mt-5 justify-between">
+          <div class="">
+            <h3 class="text-[1.5rem] font-semibold">Total:</h3>
+          </div>
+          <div class="flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+
+            <a>Adicionar novo gasto</a>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <script src="./src/js/gastos.js"></script>
+    <script src="./src/js/ganhos.js"></script>
+    <script src="./src/js/saldo.js"></script>
+  </body>
+</html>

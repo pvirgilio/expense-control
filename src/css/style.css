@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollable-sections {
+  @apply max-h-[650px] overflow-y-auto;
+}
